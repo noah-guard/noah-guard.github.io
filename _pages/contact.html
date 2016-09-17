@@ -1,0 +1,76 @@
+---
+key: 3
+title: Contact
+permalink: /contact/
+options: nolanding
+excerpt: Get in touch
+background-image: architecture.jpg
+script-includes:
+  - /js/jquery.validate.min.js
+script: |
+  $("#sendemail").validate({
+    rules: {
+      country: {
+        required: true,
+        equalTo: "#type3"
+      }
+    },
+    messages: {
+      country: "Specify a three-letter lowercase name."
+    }
+  });
+---
+
+
+
+<h4>Phone: <a href="tel:1-949-244-6181">1-949-244-6181</a></h4>
+
+<h4>Email: <a href="mailto:noah.guard949@gmail.com?&subject=New%20Contact">noah.guard949@gmail.com</a></h4>
+
+<hr>
+
+<h2><small>OUR CLIENTS</small></h2>
+
+<p><small>Our concern for the privacy and security of our clients is of utmost importance.
+
+Because no two clients or projects are alike, all of our finished shelters are unique.
+
+Using the highest quality American-made products and state-of-the-art technology, our firm is on the cutting edge, insuring peace of mind one client at a time.</small></p>
+
+<p><small>To schedule your confidential evaluation, you may also use the secure form below to contact us.</small></p>
+
+<p><small><!-- ... --></small></p>
+
+
+<h2><small>Secure Form</small></h2>
+<section>
+      <form id="sendemail" method="post" action="{{ site.data.tokens.mailaction }}" name="secure-form">
+        <input type="hidden" value="dog" id="type1" />
+        <input type="hidden" value="cow" id="type2" />
+        <input type="hidden" value="cat" id="type3" />
+        <div class="row uniform">
+          <div class="6u 12u$(xsmall)">
+            <input type="text" name="name" id="name" value="" placeholder="Your Name" />
+          </div>
+          <div class="6u$ 12u$(xsmall)">
+            <input required type="email" name="email" id="email" value="" placeholder="Your Email" />
+          </div>
+          <div class="12u$">
+            <textarea required name="textbody" id="textbody" placeholder="Your Project Goals" rows="6"></textarea>
+          </div>
+          <div class="12u$">
+            <input type="text" name="country" id="country" value=""
+            placeholder="What animal is this emoji? =^.^=" />
+          </div>
+          <div class="12u$">
+            <ul class="actions">
+              <li><input type="submit" value="Send Message" class="special" /></li>
+            </ul>
+          </div>
+        </div>
+    <input type="hidden" name="success"
+           value="{{ '/contact-success' | prepend: site.baseurl | prepend: site.url }}" />
+    <input type="hidden" name="failure"
+           value="{{ '/contact-failure' | prepend: site.baseurl | prepend: site.url }}" />
+  </form>
+</section>
