@@ -18,8 +18,8 @@ owner:
   email: noah.guard949@gmail.com
   url: https://noahguard.com
 first_published: # if migrating another site, the year of your first publish
-baseurl: "https://noah-guard.github.io" # the subpath of your site, e.g. /blog
-url: "https://noah-guard.github.io" # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://noah-guard.github.io/" # the base hostname & protocol for your site
 
 # on landing page
 # - set the greeting only if you want to display the first green section
