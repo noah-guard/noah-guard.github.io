@@ -1,6 +1,5 @@
 # Jekyll ignores
 .jekyll-metadata
-_site/
 .sass-cache/
 _drafts/
 _data/tokens.yml
