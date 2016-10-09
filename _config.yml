@@ -16,7 +16,7 @@ description: Customized Safe Rooms, Blast Shelters and Impervious Structures.
 owner:
   name: NoahGuard | Michael Conley
   email: noah.guard949@gmail.com
-  url: https://noah-guard.github.io/
+  url: https://noahguard.com/
 first_published: # if migrating another site, the year of your first publish
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://noah-guard.github.io/" # the base hostname & protocol for your site
